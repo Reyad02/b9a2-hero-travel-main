@@ -23,6 +23,15 @@ main {
     color: #FF5400;
 }
 
+.primary-btn {
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFFFFF;
+    font-size: 1.125rem;
+    border: none;
+    padding: 14px 34px;
+}
+
 
 
 /* header part */
@@ -136,6 +145,42 @@ nav li a {
 
 
 
+/* popular-tours section */
+.popular-tours {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-tours-description {
+    width: 48%;
+}
+
+.popular-tours-description>h3 {
+    font-size: 2.5rem;
+}
+
+.popular-tours-description>p {
+    margin: 5% 0;
+}
+
+.popular-tours-img {
+    width: 40%;
+}
+
+.popular-tours-img>img {
+    width: 100%;
+}
+
+.popular-tours-description ul {
+    padding-left: 3%;
+}
+
+.popular-tours-description li {
+    margin-bottom: 3%;
+}
+
+
 
 
 
@@ -177,5 +222,18 @@ nav li a {
         width: 100%;
         padding: 4% 4%;
         font-size: 1.125rem;
+    }
+
+    .popular-tours {
+        flex-direction: column;
+    }
+
+    .popular-tours-description {
+        width: auto;
+        margin-bottom: 5%;
+    }
+
+    .popular-tours-img {
+        width: auto;
     }
 }
