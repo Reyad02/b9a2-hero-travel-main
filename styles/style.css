@@ -10,10 +10,9 @@
 
 header,
 main {
-    /* max-width: 1440px; */
-    /* min-width: 992px; */
-    /* margin: 0 auto; */
+    margin: 0 5%;
 }
+
 
 .title {
     font-weight: 800;
@@ -31,14 +30,9 @@ main {
     font-size: 1.125rem;
     border: none;
     padding: 14px 34px;
+    cursor: pointer;
 }
 
-
-/* body part  */
-
-body {
-    margin: 0 5%;
-}
 
 /* header part */
 nav {
@@ -75,6 +69,9 @@ nav li a {
     font-size: 1rem;
 }
 
+.home {
+    font-weight: 700;
+}
 
 
 
@@ -146,6 +143,7 @@ nav li a {
     border: none;
     border-radius: 8px;
     font-size: 0.85rem;
+    cursor: pointer;
 }
 
 
@@ -287,8 +285,6 @@ nav li a {
     margin: 16px 0 24px;
     max-width: 350px;
     color: #5A5A5D;
-
-
 }
 
 .newsletter-form>hr {
@@ -308,12 +304,10 @@ nav li a {
     background: rgba(19, 19, 24, 0.05);
     color: rgba(19, 19, 24, 0.30);
     width: 80%;
-
 }
 
 .subscribe {
     width: 86%;
-
 }
 
 .newsletter-img {
@@ -337,7 +331,6 @@ nav li a {
     width: 50%;
     bottom: 15%;
     left: 47%;
-
 }
 
 .discount>h3 {
@@ -348,6 +341,62 @@ nav li a {
 .discount>p {
     font-size: 1.5rem;
 }
+
+
+
+
+/* footer style  */
+footer {
+    margin-top: 80px;
+    text-align: center;
+    background: rgba(19, 19, 24, 0.05);
+    padding: 80px 0 15px;
+}
+
+footer>.footer-company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+}
+
+.footer-company>h3 {
+    font-size: 2rem;
+}
+
+footer>p {
+    max-width: 760px;
+    margin: 15px auto 30px;
+    color: #5A5A5D;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.5rem;
+}
+
+footer>hr {
+    background: rgba(19, 19, 24, 0.10);
+    height: 1px;
+    border: none;
+    margin: 50px auto;
+    width: 75%;
+}
+
+.right {
+    color: #131318;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -426,7 +475,6 @@ nav li a {
         margin-top: 40%;
         flex-direction: column;
         gap: 20px;
-
     }
 
     .newsletter-form {
@@ -435,6 +483,10 @@ nav li a {
 
     .newsletter-img {
         width: auto;
-
     }
+
+    .footer-description {
+        width: 75%;
+    }
+
 }
