@@ -33,6 +33,10 @@ main {
 }
 
 /* header part */
+.bar {
+    display: none;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -449,6 +453,7 @@ nav li a {
 
 .bangladesh-video>video {
     width: 100%;
+    height: 100%;
     border-radius: 16px;
 }
 
@@ -588,13 +593,26 @@ footer>hr {
 
 /* mobile screen  */
 @media screen and (max-width: 600px) {
-    nav {
+    /* nav {
         flex-direction: column;
         margin-bottom: 16px;
+    } */
+
+    nav ul {
+        display: none;
     }
 
-    main {
+    nav .bar {
+        display: inline-block;
+    }
+
+    main,
+    nav {
         padding: 0 2%;
+    }
+
+    .company-title>h3 {
+        margin-left: 0;
     }
 
     .banner {
@@ -651,6 +669,9 @@ footer>hr {
     #bd,
     #bandarban {
         grid-column: 1/span 12;
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
     }
 
     .newsletter {
@@ -671,7 +692,7 @@ footer>hr {
     }
 
     .winter-banner {
-        padding: 2%;
+        padding: 10%;
         margin-top: 40px;
     }
 
@@ -720,5 +741,7 @@ footer>hr {
         width: auto;
     }
 
-
+    .bangladesh-video>video {
+        object-fit: cover;
+    }
 }
